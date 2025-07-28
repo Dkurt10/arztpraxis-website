@@ -92,3 +92,68 @@
 
         }
       }
+
+      @media (max-width: 800px) {
+        .menu-links {
+          font-size: 15px;
+        }
+      }      
+
+
+        @media (max-width: 800px) {
+        .logo {
+          width: 150px;
+          height: 150px;
+        }
+      }      
+
+
+            @media (max-width: 700px) {
+        .menu-links {
+          font-size: 14px;
+        }
+      }      
+
+
+        @media (max-width: 700px) {
+        .logo {
+          width: 120px;
+          height: 120px;
+        }
+      }      
+
+
+          @media (max-width: 635px) {
+        .menu-links {
+          font-size: 13px;
+        }
+      }      
+
+
+        @media (max-width: 635px) {
+        .logo {
+          width: 100px;
+          height: 100px;
+        }
+      }      
+
+          @media (max-width: 590px) {
+        .menu-links {
+          font-size: 11px;
+        }
+      }      
+
+
+       @media (max-width: 545px) {
+        .menu-links {
+          font-size: 9px;
+        }
+      }      
+
+
+        @media (max-width: 545px) {
+        .logo {
+          width: 90px;
+          height: 90px;
+        }
+      }      
