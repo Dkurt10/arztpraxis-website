@@ -123,37 +123,23 @@
       }      
 
 
-          @media (max-width: 635px) {
+             @media (max-width: 635px) {
         .menu-links {
-          font-size: 13px;
+          font-size: 14px;
         }
       }      
 
-
-        @media (max-width: 635px) {
-        .logo {
-          width: 100px;
-          height: 100px;
+      @media (max-width: 600px) {
+        .Überschrift {
+          font-size: 50px;
+          width: 350px;
         }
-      }      
+      }
+       
 
-          @media (max-width: 590px) {
-        .menu-links {
-          font-size: 11px;
+        @media (max-width: 400px) {
+        .Überschrift {
+          font-size: 30px;
+          width: 250px;
         }
-      }      
-
-
-       @media (max-width: 545px) {
-        .menu-links {
-          font-size: 9px;
-        }
-      }      
-
-
-        @media (max-width: 545px) {
-        .logo {
-          width: 90px;
-          height: 90px;
-        }
-      }      
+      }
