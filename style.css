@@ -1,162 +1,152 @@
-      body {
-        margin: 0;
-        font-family: "Roboto", sans-serif;
-      }
-
-      .teambild {
-        height: 100vh;
-        width: 100%;
-        object-fit: cover;
-        filter: brightness(0.95);
-      }
-
-      .menu-container {
-        background-color: rgb(0, 0, 153);
-        position: absolute;
-        right: 0px;
-        left: 0px;
-        top: 0px;
-        height: 72px;
-        font-size: 18px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-      }
-
-      .menu-links {
-        color: white;
-        text-decoration: none;
-        margin-left: 16px;
-        margin-right: 16px;
-      }
-
-      .menu-links:hover {
-        text-decoration: underline;
-      }
-
-      .logo {
-        width: 200px;
-        height: 200px;
-      }
-
-      .Überschrift {
-        position: absolute;
-        top: 300px;
-        left: 32px;
-        color: white;
-        font-size: 70px;
-        width: 500px;
-        text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
-      }
-
-      .textarztpraxismüller {
-        color: rgb(207, 181, 33);
-      }
-
-      .textuntermbild {
-        height: 500px;
-        padding: 30px 100px;
-        display: flex;
-        gap: 50px;
-      }
-
-      .half-width {
-        width: 50%;
-      }
-
-      .anfahrt {
-        text-align: center;
-        font-size: 50px;
-      }
-
-      @media (max-width: 1300px) {
-        .half-height {
-          width: calc(100vw * 0.4);
-          height: calc (56.25vw * 0.4);
-        }
-      }
-
-      @media (max-width: 845px) {
-         .textuntermbild {
-          flex-direction: column;
-          align-items: center;
-          height: unset;
-          width: unset;
-        }
-      }
-
-      @media (max-width: 845px) {
-        .half-width {
-            width: unset;
-
-        }
-      }
-
-      @media (max-width: 800px) {
-        .menu-links {
-          font-size: 15px;
-        }
-      }      
-
-
-        @media (max-width: 800px) {
-        .logo {
-          width: 150px;
-          height: 150px;
-        }
-      }      
-
-
-            @media (max-width: 700px) {
-        .menu-links {
-          font-size: 14px;
-        }
-      }      
-
-
-        @media (max-width: 700px) {
-        .logo {
-          width: 120px;
-          height: 120px;
-        }
-      }      
-
-
-      @media (max-width: 635px) {
-        .menu-links {
-          font-size: 14px;
-        }
-      }      
-
-      @media (max-width: 600px) {
-        .Überschrift {
-          font-size: 50px;
-          width: 350px;
-          top: 370px;
-        }
-      }
-       
-
-        @media (max-width: 400px) {
-        .Überschrift {
-          font-size: 40px;
-          width: 300px;
-          top: 415px;
-        }
-      }
-
-/*Styles für das Burger-Menü */
-
-/* Burger-Icon versteckt */
-.burger-icon {
-  display: none; /* Erst bei kleineren Bildschirmen sichtbar */
-  cursor: pointer;
-  padding: 15px;
-  z-index: 1000; /* Stellt sicher, dass es über anderen Inhalten liegt */
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
-/* Die Linien des Burger-Icons */
+.teambild {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(0.95);
+}
+
+.menu-container {
+  background-color: rgb(0, 0, 153);
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+  height: 72px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.menu-links {
+  color: white;
+  text-decoration: none;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.menu-links:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
+}
+
+.Überschrift {
+  position: absolute;
+  top: 300px;
+  left: 32px;
+  color: white;
+  font-size: 70px;
+  width: 500px;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+}
+
+.textarztpraxismüller {
+  color: rgb(207, 181, 33);
+}
+
+.textuntermbild {
+  height: 500px;
+  padding: 30px 100px;
+  display: flex;
+  gap: 50px;
+}
+
+.half-width {
+  width: 50%;
+}
+
+.anfahrt {
+  text-align: center;
+  font-size: 50px;
+}
+
+@media (max-width: 1300px) {
+  .half-height {
+    width: calc(100vw * 0.4);
+    height: calc (56.25vw * 0.4);
+  }
+}
+
+@media (max-width: 845px) {
+  .textuntermbild {
+    flex-direction: column;
+    align-items: center;
+    height: unset;
+    width: unset;
+  }
+}
+
+@media (max-width: 845px) {
+  .half-width {
+    width: unset;
+  }
+}
+
+@media (max-width: 800px) {
+  .menu-links {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 800px) {
+  .logo {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 700px) {
+  .menu-links {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 700px) {
+  .logo {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 635px) {
+  .menu-links {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .Überschrift {
+    font-size: 50px;
+    width: 350px;
+    top: 370px;
+  }
+}
+
+@media (max-width: 400px) {
+  .Überschrift {
+    font-size: 40px;
+    width: 300px;
+    top: 415px;
+  }
+}
+
+.burger-icon {
+  display: none;
+  cursor: pointer;
+  padding: 15px;
+  z-index: 1000;
+}
+
 .burger-icon div {
   width: 35px;
   height: 5px;
@@ -165,12 +155,10 @@
   transition: 0.4s;
 }
 
-/* Der Wrapper für die Links */
 .menu-links-wrapper {
-  display: flex; 
-  align-items: center; 
+  display: flex;
+  align-items: center;
 }
-
 
 @media (max-width: 600px) {
   .Überschrift {
@@ -179,35 +167,31 @@
     top: 370px;
   }
 
-  /* Die normalen Navigationslinks verstecken */
   .menu-links-wrapper {
-    display: none; /* Versteckt die normalen Links */
-    flex-direction: column; /* Links sollen untereinander liegen, wenn sichtbar */
+    display: none;
+    flex-direction: column;
     position: absolute;
-    top: 72px; /* Positioniert das aufgeklappte Menü direkt unter dem Header */
+    top: 72px;
     right: 0;
     background-color: rgb(0, 0, 153);
     width: 100%;
     text-align: center;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
     padding-bottom: 10px;
-    z-index: 999; /* Damit das Menü über dem Inhalt liegt */
+    z-index: 999;
   }
 
-  /* Wenn die Klasse 'active' hinzugefügt wird, zeige das Menü an */
   .menu-links-wrapper.active {
     display: flex;
   }
 
-  /* Abstand der Links im aufgeklappten Menü */
   .menu-links {
-    margin: 10px 0; /* Vertikaler Abstand für die Links im Burger-Menü */
+    margin: 10px 0;
   }
 
-  /* Das Burger-Icon anzeigen */
   .burger-icon {
-    display: block; /* Zeigt das Burger-Icon an */
-    margin-right: 16px; /* Positioniert es rechts im Header */
+    display: block;
+    margin-right: 16px;
   }
 }
 
