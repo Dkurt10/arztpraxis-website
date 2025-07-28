@@ -145,3 +145,76 @@
           top: 415px;
         }
       }
+
+/*Styles für das Burger-Menü */
+
+/* Burger-Icon versteckt */
+.burger-icon {
+  display: none; /* Erst bei kleineren Bildschirmen sichtbar */
+  cursor: pointer;
+  padding: 15px;
+  z-index: 1000; /* Stellt sicher, dass es über anderen Inhalten liegt */
+}
+
+/* Die Linien des Burger-Icons */
+.burger-icon div {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Der Wrapper für die Links */
+.menu-links-wrapper {
+  display: flex; 
+  align-items: center; 
+}
+
+
+@media (max-width: 600px) {
+  .Überschrift {
+    font-size: 50px;
+    width: 350px;
+    top: 370px;
+  }
+
+  /* Die normalen Navigationslinks verstecken */
+  .menu-links-wrapper {
+    display: none; /* Versteckt die normalen Links */
+    flex-direction: column; /* Links sollen untereinander liegen, wenn sichtbar */
+    position: absolute;
+    top: 72px; /* Positioniert das aufgeklappte Menü direkt unter dem Header */
+    right: 0;
+    background-color: rgb(0, 0, 153);
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+    padding-bottom: 10px;
+    z-index: 999; /* Damit das Menü über dem Inhalt liegt */
+  }
+
+  /* Wenn die Klasse 'active' hinzugefügt wird, zeige das Menü an */
+  .menu-links-wrapper.active {
+    display: flex;
+  }
+
+  /* Abstand der Links im aufgeklappten Menü */
+  .menu-links {
+    margin: 10px 0; /* Vertikaler Abstand für die Links im Burger-Menü */
+  }
+
+  /* Das Burger-Icon anzeigen */
+  .burger-icon {
+    display: block; /* Zeigt das Burger-Icon an */
+    margin-right: 16px; /* Positioniert es rechts im Header */
+  }
+}
+
+@media (max-width: 400px) {
+  .Überschrift {
+    font-size: 40px;
+    width: 300px;
+    top: 415px;
+  }
+}
